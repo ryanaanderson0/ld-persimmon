@@ -10,22 +10,16 @@
  */
 
 ?>
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'live_deliciously_persimmon' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'live_deliciously_persimmon' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
+	</div><!-- .content-container -->
+		<footer id="colophon" class="site-footer">
+			<div class="site-info text-center">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'live_deliciously_persimmon' ), 'live_deliciously_persimmon', '<a href="http://underscores.me/">Ryan Anderson</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'live_deliciously_persimmon' ), 'Persimmon', '<a href="http://underscores.me/">Live Deliciously</a>' );
 				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

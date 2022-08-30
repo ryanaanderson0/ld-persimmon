@@ -5,6 +5,7 @@
 .post,
 .page {
 	margin: 0 0 1.5em;
+	min-height: 100vh;
 }
 
 .updated:not(.published) {
@@ -20,4 +21,18 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.border-container{
+	margin: 0 1.5rem 1.5rem 1.5rem;
+	background-color: #FFFFF0;
+	padding: 1.5rem;
+}
+
+.main-border {
+	border: solid 2px $color__primary;
+}
+
+.content-container {
+	margin: 2rem;
 }
