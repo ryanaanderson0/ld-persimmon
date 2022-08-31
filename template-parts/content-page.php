@@ -11,13 +11,18 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php if( !is_front_page() ) : the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
+		<?php endif ?>
 	</header><!-- .entry-header -->
 
 	<?php live_deliciously_persimmon_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
+
+		get_template_part( 'template-parts/acf-loop', 'none' ); // Display Layout Modules
+
 		the_content();
 
 		wp_link_pages(
