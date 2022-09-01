@@ -48,6 +48,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	- Alignments
 
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 /*--------------------------------------------------------------
 # Generic
 --------------------------------------------------------------*/
@@ -400,6 +401,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: "Abril Fatface", cursive, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 p {
@@ -543,10 +545,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #e6e6e6;
+	border: 2px solid;
+	border-color: rgba(207, 79, 5, 0.75);
+	border-radius: 5px;
+	background: #ffffff;
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
@@ -567,6 +569,13 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
+}
+
+.primary-button {
+	padding: .8rem 3rem;
+	box-shadow: 8px 7px 0px 0px rgba(190, 70, 1, 0.75);
+	-webkit-box-shadow: 8px 7px 0px 0px rgba(190, 70, 1, 0.75);
+	-moz-box-shadow: 8px 7px 0px 0px rgba(190, 70, 1, 0.75);
 }
 
 input[type="text"],
@@ -780,9 +789,23 @@ textarea {
 --------------------------------------------- */
 /* Hero Image
 --------------------------------------------- */
-.hero-image img {
-	height: 75vh;
+.hero-image {
+	height: 70vh;
 	width: 100%;
+}
+
+.hero-text {
+	position: absolute;
+	left: 10rem;
+	bottom: 15rem;
+	background-color: #fffff0;
+	min-height: 25vh;
+	min-width: 35vw;
+	padding: 80px;
+}
+
+.hero-text h1 {
+	font-size: 3.2rem;
 }
 
 /* Comments

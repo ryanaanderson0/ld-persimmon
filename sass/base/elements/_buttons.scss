@@ -2,9 +2,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
-	border-color: $color__border-button;
-	border-radius: 3px;
+	border: 2px solid;
+	border-color: rgba(207, 79, 5, 0.75);
+	border-radius: 5px;
 	background: $color__background-button;
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
@@ -18,4 +18,11 @@ input[type="submit"] {
 	&:focus {
 		border-color: $color__border-button-focus;
 	}
+}
+
+.primary-button {
+	padding: .8rem 3rem;
+	box-shadow: 8px 7px 0px 0px rgba(190, 70, 1, 0.75);
+	-webkit-box-shadow: 8px 7px 0px 0px rgba(190, 70, 1, 0.75);
+	-moz-box-shadow: 8px 7px 0px 0px rgba(190, 70, 1, 0.75);
 }
